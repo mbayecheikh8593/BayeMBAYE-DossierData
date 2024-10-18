@@ -3,86 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier de Compétences de Baye Cheikh MBAYE</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Dossier de Compétences - Baye Cheikh MBAYE</title>
 </head>
 <body>
-    <header>
-        <h1>Dossier de Compétences</h1>
-        <h2>Baye Cheikh MBAYE</h2>
-        <img src="photo_profil.png" alt="Photo de Profil" class="profile-photo">
-    </header>
-    
 
-    <nav>
+<header>
+    <h1>Dossier de Compétences de Baye Cheikh MBAYE</h1>
+</header>
+
+<!-- Onglets -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Accueil')">Accueil</button>
+    <button class="tablinks" onclick="openTab(event, 'Competences')">Compétences Techniques</button>
+    <button class="tablinks" onclick="openTab(event, 'Experiences')">Expériences Professionnelles</button>
+    <button class="tablinks" onclick="openTab(event, 'Formation')">Formation</button>
+    <button class="tablinks" onclick="openTab(event, 'CompetencesRelationnelles')">Compétences Relationnelles</button>
+</div>
+
+<!-- Contenu des onglets -->
+<div id="Accueil" class="tabcontent">
+    <div class="welcome-section">
+        <img src="photo_profil.png" alt="Photo de Baye Cheikh MBAYE" class="profile-photo">
+        <p><strong>Nom :</strong> Baye Cheikh MBAYE</p>
+        <p><strong>Poste visé :</strong> Data Analyst | Data Engineer | Data Scientist | Consultant BI</p>
+        <p><strong>Téléphone :</strong> 07 53 93 34 83 </p>
+        <p><strong>Email : </strong> <a href="mailto:mbayecheikh8593@gmail.com">mbayecheikh8593@gmail.com</a></p>
+
+    </div>
+    <div class="tech-background">
+        <h2>Profil Professionnel</h2>
+        <p>Récemment diplômé d'un Master en Systèmes d’Information et Aide à la Décision (option Data Science), avec une expérience significative en tant qu'Apprenti Data Analyst chez Generali. Passionné par l'analyse de données et la Business Intelligence, je suis motivé par l'idée d'utiliser mes compétences techniques pour résoudre des problématiques métier et contribuer à des projets impactants.</p>
+    </div>
+</div>
+
+<div id="Competences" class="tabcontent">
+    <h2>Compétences Techniques</h2>
+    <div class="tech-background">
+        <h3>1. Analyse de Données</h3>
         <ul>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#experiences">Projets et Expériences</a></li>
-            <li><a href="#interpersonnelles">Compétences Interpersonnelles</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><strong>Python :</strong> Utilisation de bibliothèques telles que Pandas, NumPy et Scikit-Learn.</li>
+            <li><strong>SQL :</strong> Conception et optimisation de requêtes SQL.</li>
+            <li><strong>SAS :</strong> Analyse et manipulation des données.</li>
+            <li><strong>Tableau :</strong> Création de visualisations dynamiques.</li>
+            <li><strong>Oracle :</strong> Gestion des bases de données.</li>
         </ul>
-    </nav>
-
-    <section id="technologies" class="tech-background">
-        <h2>1. Technologies principales</h2>
-        <p>SQL, Python, Power BI, Dataiku, Snowflake, Spark, SAS, R, Tableau, Spark</p>
-    </section>
-
-    <section id="experiences" class="tech-background">
-        <h2>2. PROJETS ET EXPÉRIENCES</h2>
-        <h3>Alternant Data Analyst - Generali (2022-2024)</h3>
+        <h3>2. Outils de Business Intelligence</h3>
         <ul>
-            <li>Technologies : SQL, Python, Power BI, Snowflake, Spark, Dataiku.</li>
-            <li>Gestion de bases de données et analyse de données pour améliorer les performances métiers.</li>
-            <li>Création de tableaux de bord Power BI pour visualiser les KPI clés.</li>
-            <li>Automatisation de processus via des outils ETL comme Dataiku.</li>
-            <li>Utilisation de Dataiku pour la préparation et l’analyse des données.</li>
+            <li><strong>Power BI :</strong> Création de tableaux de bord interactifs.</li>
+        </ul>
+        <h3>3. Outils ETL et Big Data</h3>
+        <ul>
+            <li><strong>Talend et Semarchy :</strong> Intégration et transformation des données.</li>
+            <li><strong>Apache Spark :</strong> Traitement de grandes volumétries de données.</li>
+            <li><strong>Snowflake :</strong> Stockage et analyse des données.</li>
+        </ul>
+        <h3>4. Outils de Data Science et Machine Learning</h3>
+        <ul>
+            <li><strong>Dataiku :</strong> Développement de projets de data science.</li>
+            <li><strong>Scikit-Learn et TensorFlow :</strong> Développement de modèles de machine learning.</li>
+        </ul>
+        <h3>5. Traitement de Texte</h3>
+        <ul>
+            <li><strong>NLTK et SpaCy :</strong> Analyse et traitement de données textuelles.</li>
+        </ul>
+        <h3>6. Environnements de Développement</h3>
+        <ul>
+            <li><strong>Jupyter et RStudio :</strong> Développement et exécution de scripts.</li>
+        </ul>
+        <h3>7. Gestion de Projets</h3>
+        <ul>
+            <li>Participation à des projets d'analyse de données de bout en bout.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="Experiences" class="tabcontent">
+    <h2>Expériences Professionnelles</h2>
+    <div class="tech-background">
+        <h3>
+            <a href="https://www.generali.fr/" target="_blank">
+                <img src="logo_generali.jpeg" alt="Logo Generali" class="company-logo" style="width: 180px; height: auto;"> 
+                Apprenti Data Analyst - Generali (Août 2022 - Août 2024)
+            </a>
+        </h3>
+        <ul>
+            <li>Analyse et gestion des données pour améliorer la prise de décision stratégique.</li>
+            <li>Création de tableaux de bord Power BI pour la visualisation des performances.</li>
+            <li>Automatisation des rapports grâce à des scripts Python.</li>
         </ul>
         
-        <h3>Projet Universitaire : Analyse et gestion de données pour une entreprise dentaire (2023)</h3>
+        <h3>
+            <img src="logo_universite_lille.png" alt="Logo Université de Lille" class="company-logo" style="width: 180px; height: auto;"> 
+            Projet Universitaire : Analyse et gestion de données pour une entreprise dentaire (2023)
+        </h3>
         <ul>
-            <li>Technologies : Semarchy, Git, Oracle, Power BI.</li>
+            <li><strong>Technologies :</strong> Semarchy, Git, Oracle, Power BI.</li>
             <li>Modélisation de données pour identifier les tendances sectorielles et optimiser les processus métiers.</li>
             <li>Création de visualisations sur mesure pour la prise de décision grâce à des outils BI (Power BI).</li>
         </ul>
         
-        <h3>Stage en Gestion de Base de Données - CMAO Lille (2021)</h3>
+        <h3>
+            <img src="logo_cmao_lille.jpg" alt="Logo CMAO de Lille" class="company-logo" style="width: 180px; height: auto;"> 
+            Stage en Gestion de Base de Données - CMAO de Lille (Avril 2021 - Juin 2021)
+        </h3>
         <ul>
-            <li>Traitement et organisation des données clients avec SQL, Excel, et Access.</li>
-            <li>Conception de tableaux de bord pour suivre les performances opérationnelles.</li>
+            <li>Collecte, traitement et organisation des données clients.</li>
+            <li>Développement de visualisations sur Power BI.</li>
         </ul>
-    </section>
+    </div>
+</div>
 
-    <section id="interpersonnelles" class="tech-background">
-        <h2>3. COMPÉTENCES INTERPERSONNELLES</h2>
+
+
+
+<div id="Formation" class="tabcontent">
+    <h2>Formation</h2>
+    <div class="tech-background">
+        <ul class="formation-list">
+            <li>
+                <span class="formation-icon">🎓</span>
+                <strong>Master en Systèmes d’Information et Aide à la Décision</strong> (2022 - 2024) - Université de Lille
+            </li>
+            <li>
+                <span class="formation-icon">📘</span>
+                <strong>Licence en Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales</strong> (2021 - 2022) - Université de Lille
+            </li>
+            <li>
+                <span class="formation-icon">🧮</span>
+                <strong>DUT en Statistique et Informatique Décisionnelle</strong> (2019 - 2021) - Université de Lille - IUT C Roubaix
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="CompetencesRelationnelles" class="tabcontent">
+    <h2>Compétences Relationnelles</h2>
+    <div class="tech-background">
         <ul>
-            <li>Travail d'équipe : Collaboration avec des équipes multidisciplinaires pour répondre aux besoins métier.</li>
-            <li>Communication : Présentation des résultats analytiques et rapports aux équipes dirigeantes.</li>
-            <li>Autonomie : Gestion des tâches et projets en toute indépendance tout en respectant les délais.</li>
+            <li>Bon relationnel et capacité à travailler en équipe.</li>
+            <li>Autonomie, curiosité et rigueur dans la réalisation des missions.</li>
+            <li>Passionné par le service client et la résolution de problèmes.</li>
         </ul>
-    </section>
+    </div>
+</div>
 
-    <section id="formation" class="tech-background">
-        <h2>4. FORMATION</h2>
-        <ul>
-            <li>Master SIAD (Systèmes d’Information et Aide à la Décision) - Parcours Data Science (2022-2024) - Université de Lille</li>
-            <li>Licence MIASHS - Mathématiques, Statistiques et Informatique Décisionnelle (2021-2022) - Université de Lille</li>
-            <li>DUT Statistique et Informatique Décisionnelle (2019-2021) - Université de Lille</li>
-        </ul>
-    </section>
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";  
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";  
+    evt.currentTarget.className += " active";
+}
 
-    <section id="contacts">
-        <h2>Contacts</h2>
-        <ul>
-            <li>Numéro de téléphone : 07 53 93 34 83</li>
-            <li>Email : <a href="mailto:mbayecheikh8593@gmail.com">mbayecheikh8593@gmail.com</a></li>
+// Ouvrir l'onglet par défaut
+document.getElementsByClassName("tablinks")[0].click();
+</script>
 
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Baye Cheikh MBAYE</p>
-    </footer>
 </body>
 </html>

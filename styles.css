@@ -6,60 +6,84 @@ body {
 }
 
 header {
-    background: #007BFF;
-    color: #fff;
-    padding: 20px;
+    background-color: #004d00; /* Couleur verte */
+    color: white;
     text-align: center;
-}
-
-nav {
-    background: #333;
-    color: #fff;
     padding: 10px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.tab {
+    overflow: hidden;
+    background-color: #005900; /* Couleur bleu-vert */
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.tab button {
+    background-color: inherit;
+    border: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.tab button:hover {
+    background-color: #007300; /* Couleur de survol */
 }
 
-.tech-background {
-    background-color: #e6f0ff; /* Une couleur bleu clair */
-    padding: 15px; /* Ajout de padding pour l'esthétique */
-    border-radius: 10px; /* Coins arrondis */
-    margin: 20px; /* Ajout d'une marge entre les sections */
-}
-
-section {
+.tabcontent {
+    display: none;
     padding: 20px;
 }
 
-h2 {
-    border-bottom: 2px solid #007BFF;
+.welcome-section {
+    text-align: center;
+    margin: 20px 0;
 }
 
 .profile-photo {
-    width: 280px; /* Ajustez la taille de la photo selon vos préférences */
-    border-radius: 10%; /* Pour rendre la photo ronde */
+    width: 250px; /* Taille de la photo */
+    height: 150px; /* Taille de la photo */
+    border-radius: 40%; /* Pour une photo ronde */
+}
+.formation-list {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0;
 }
 
+.formation-list li {
+    background-color: #cceeff; /* Couleur de fond pour chaque élément */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 10px;
+    margin: 10px 0; /* Espacement entre les éléments */
+    transition: transform 0.2s; /* Effet de transition */
+    display: flex; /* Alignement des icônes et du texte */
+    align-items: center; /* Centrer verticalement */
+}
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.formation-list li:hover {
+    transform: scale(1.02); /* Légère augmentation de la taille au survol */
+}
+
+.formation-icon {
+    font-size: 24px; /* Taille de l'icône */
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+.company-logo {
+    width: 50px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    vertical-align: middle; /* Alignement vertical avec le texte */
+    margin-right: 10px; /* Espacement entre le logo et le texte */
+}
+
+.tech-background {
+    background-color: #e6f0ff; /* Couleur de fond */
+    padding: 15px; /* Ajout de padding pour l'esthétique */
+    border-radius: 10px; /*
+.company-logo {
+    width: 50px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    vertical-align: middle; /* Alignement vertical avec le texte */
+    margin-right: 10px; /* Espacement entre le logo et le texte */
 }
