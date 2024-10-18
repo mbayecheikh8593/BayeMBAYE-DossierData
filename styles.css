@@ -49,8 +49,8 @@ h2 {
 }
 
 .profile-photo {
-    width: 150px; /* Ajustez la taille de la photo selon vos préférences */
-    border-radius: 50%; /* Pour rendre la photo ronde */
+    width: 350px; /* Ajustez la taille de la photo selon vos préférences */
+    border-radius: 10%; /* Pour rendre la photo ronde */
 }
 
 footer {
