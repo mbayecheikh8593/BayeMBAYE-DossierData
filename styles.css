@@ -232,6 +232,7 @@ img {
     padding: 12px;
     margin-bottom: 20px;
 }
+
 /* Adaptation pour les petits écrans (téléphones) */
 @media (max-width: 768px) {
     body {
