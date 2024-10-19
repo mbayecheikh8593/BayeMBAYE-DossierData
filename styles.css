@@ -21,6 +21,7 @@ nav ul {
     display: flex;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 nav ul li {
@@ -40,31 +41,28 @@ nav ul li a {
     margin: 20px 0;
 }
 
-.tab input[type="radio"] {
-    display: none;
-}
-
-.tab label {
+.tab button {
     background-color: #004d40;
     color: white;
     padding: 10px 20px;
+    border: none;
+    font-size: 16px;
     border-radius: 5px;
     margin: 0 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.tab label:hover {
+.tab button:hover {
     background-color: #00332a;
 }
 
-.tab input[type="radio"]:checked + label {
+.tab button.active {
     background-color: #00695c;
 }
 
-/* Contenu des onglets */
-.tabcontent {
-    display: none;
+/* Sections */
+section {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 15px;
@@ -74,16 +72,7 @@ nav ul li a {
     margin: 30px auto;
 }
 
-/* Afficher le contenu de l'onglet actif */
-#tab-accueil:checked ~ .tabcontent#Accueil,
-#tab-competences:checked ~ .tabcontent#Competences,
-#tab-experiences:checked ~ .tabcontent#Experiences,
-#tab-formation:checked ~ .tabcontent#Formations,
-#tab-softskills:checked ~ .tabcontent#Softskills {
-    display: block;
-}
-
-/* Styles spécifiques */
+/* Titres */
 h1, h2 {
     color: #fff;
     font-weight: bold;
@@ -94,16 +83,105 @@ h1, h2 {
     font-size: 24px;
 }
 
-/* Photo de Profil */
-.profile-photo {
-    width: 150px; /* Ajustez la taille pour mobile */
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+h3, h4 {
+    color: #fff;
+    font-weight: bold;
+    margin: 20px 0;
+    background-color: #00695c;
+    padding: 8px;
+    font-size: 18px;
 }
 
-/* Styles de la section d'accueil */
+.section-title {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+    background-color: #004d40;
+    padding: 10px;
+}
+
+.sub-section-title {
+    font-size: 16px;
+    color: #fff;
+    margin: 15px 0;
+    background-color: #00695c;
+    padding: 8px;
+}
+
+/* Texte */
+p {
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+/* Listes */
+ul {
+    list-style-type: square;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Boutons */
+button {
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #00332a;
+}
+
+/* Liens */
+a {
+    color: #005b96;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+.profile-photo {
+    width: 350px;
+    height: auto;
+    border-radius: 90%;
+}
+
+.welcome-section {
+    position: relative;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+
+.profile-photo {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Section d'accueil */
 .acceuil {
     width: 300px;
     height: 300px;
@@ -129,26 +207,141 @@ h1, h2 {
 }
 
 /* Marges pour les sections spécifiques */
-.formations {
+.competences,
+.experiences,
+.formations,
+.profil-professionnel,
+.competences-techniques,
+.experiences-professionnelles,
+.formation,
+.competences-relationnelles {
     margin: 30px 0;
+}
+
+/* Style contextuel */
+.context {
+    background-color: #f1f8e9;
+    border-left: 4px solid #388e3c;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.missions {
+    background-color: #e0f2f1;
+    border-left: 4px solid #004d40;
+    padding: 12px;
+    margin-bottom: 20px;
 }
 
 /* Adaptation pour les petits écrans (téléphones) */
 @media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .tab button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    h3, h4 {
+        font-size: 16px;
+    }
+
     .profile-photo {
-        width: 100px; /* Ajustez la taille pour mobile */
+        width: 100px;
+        top: 10px;
+        right: 10px;
     }
 
     .acceuil {
-        width: 200px; /* Ajustez la taille pour mobile */
+        width: 200px;
         height: 200px;
     }
 
     .acceuil h1 {
-        font-size: 20px; /* Réduisez la taille pour mobile */
+        font-size: 20px;
     }
 
     .acceuil p {
-        font-size: 14px; /* Réduisez la taille pour mobile */
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
+
+/* Adaptation pour les écrans moyens (tablettes) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    .tab button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 12px;
+        margin: 20px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    h3, h4 {
+        font-size: 17px;
+    }
+
+    .profile-photo {
+        width: 90px;
+    }
+
+    .acceuil {
+        width: 250px;
+        height: 250px;
+    }
+
+    .acceuil h1 {
+        font-size: 22px;
+    }
+
+    .acceuil p {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 11px;
+        padding: 7px 12px;
     }
 }
