@@ -232,3 +232,115 @@ img {
     padding: 12px;
     margin-bottom: 20px;
 }
+/* Adaptation pour les petits écrans (téléphones) */
+@media (max-width: 768px) {
+    body {
+        margin: 10px; /* Réduire les marges pour les petits écrans */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 8px; /* Réduire l'espacement des éléments de navigation */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Réduire la taille de la police pour la navigation */
+    }
+
+    .tab button {
+        padding: 8px 15px; /* Réduire le rembourrage des boutons d'onglet */
+        font-size: 14px; /* Réduire la taille de la police des boutons d'onglet */
+    }
+
+    section {
+        padding: 10px; /* Réduire le rembourrage des sections */
+        margin: 15px; /* Réduire la marge des sections */
+    }
+
+    h1, h2 {
+        font-size: 20px; /* Réduire la taille de la police pour les titres */
+    }
+
+    h3, h4 {
+        font-size: 16px; /* Réduire la taille de la police pour les sous-titres */
+    }
+
+    .profile-photo {
+        width: 100px; /* Ajuster la taille de la photo de profil */
+        top: 10px; /* Réajuster la position */
+        right: 10px; /* Réajuster la position */
+    }
+
+    .acceuil {
+        width: 200px; /* Ajuster la taille de la section d'accueil */
+        height: 200px; /* Ajuster la taille de la section d'accueil */
+    }
+
+    .acceuil h1 {
+        font-size: 20px; /* Réduire la taille de la police pour le titre d'accueil */
+    }
+
+    .acceuil p {
+        font-size: 14px; /* Réduire la taille de la police pour le texte d'accueil */
+    }
+
+    button {
+        font-size: 10px; /* Réduire la taille de la police des boutons */
+        padding: 6px 10px; /* Réduire le rembourrage des boutons */
+    }
+}
+
+/* Adaptation pour les écrans moyens (tablettes) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 15px; /* Ajuster les marges pour les tablettes */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Ajuster l'espacement des éléments de navigation */
+    }
+
+    nav ul li a {
+        font-size: 17px; /* Ajuster la taille de la police pour la navigation */
+    }
+
+    .tab button {
+        padding: 9px 18px; /* Ajuster le rembourrage des boutons d'onglet */
+        font-size: 15px; /* Ajuster la taille de la police des boutons d'onglet */
+    }
+
+    section {
+        padding: 12px; /* Ajuster le rembourrage des sections */
+        margin: 20px; /* Ajuster la marge des sections */
+    }
+
+    h1, h2 {
+        font-size: 22px; /* Ajuster la taille de la police pour les titres */
+    }
+
+    h3, h4 {
+        font-size: 17px; /* Ajuster la taille de la police pour les sous-titres */
+    }
+
+    .profile-photo {
+        width: 120px; /* Ajuster la taille de la photo de profil */
+    }
+
+    .acceuil {
+        width: 250px; /* Ajuster la taille de la section d'accueil */
+        height: 250px; /* Ajuster la taille de la section d'accueil */
+    }
+
+    .acceuil h1 {
+        font-size: 22px; /* Ajuster la taille de la police pour le titre d'accueil */
+    }
+
+    .acceuil p {
+        font-size: 15px; /* Ajuster la taille de la police pour le texte d'accueil */
+    }
+
+    button {
+        font-size: 11px; /* Ajuster la taille de la police des boutons */
+        padding: 7px 12px; /* Ajuster le rembourrage des boutons */
+    }
+}
