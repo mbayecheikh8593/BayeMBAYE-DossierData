@@ -239,6 +239,9 @@ img {
     .profile-photo {
         width: 80px; /* Ajuster la taille de la photo de profil sur mobile */
         margin: 10px auto; /* Centrer la photo de profil */
+        float: right; /* Placer la photo à droite */
+        margin-left: 10px; /* Ajouter un espacement entre la photo et le texte */
+        margin-bottom: 20px; /* Espacement en bas pour éviter les chevauchements */
     }
 
     .acceuil {
@@ -307,6 +310,9 @@ img {
 
     .profile-photo {
         width: 90px;
+        float: right; /* Placer la photo à droite */
+        margin-left: 10px; /* Ajouter un espacement entre la photo et le texte */
+        margin-bottom: 20px; /* Espacement en bas pour éviter les chevauchements */
     }
 
     .acceuil {
