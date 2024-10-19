@@ -45,45 +45,10 @@ header {
 .profile-photo {
     width: 250px; /* Taille de la photo */
     height: 150px; /* Taille de la photo */
-    border-radius: 40%; /* Pour une photo ronde */
-}
-.formation-list {
-    list-style-type: none; /* Supprimer les puces */
-    padding: 0;
-}
-
-.formation-list li {
-    background-color: #cceeff; /* Couleur de fond pour chaque élément */
-    border-radius: 8px; /* Coins arrondis */
-    padding: 10px;
-    margin: 10px 0; /* Espacement entre les éléments */
-    transition: transform 0.2s; /* Effet de transition */
-    display: flex; /* Alignement des icônes et du texte */
-    align-items: center; /* Centrer verticalement */
-}
-
-.formation-list li:hover {
-    transform: scale(1.02); /* Légère augmentation de la taille au survol */
-}
-
-.formation-icon {
-    font-size: 24px; /* Taille de l'icône */
-    margin-right: 10px; /* Espacement entre l'icône et le texte */
-}
-.company-logo {
-    width: 50px; /* Largeur du logo */
-    height: auto; /* Hauteur automatique pour maintenir les proportions */
-    vertical-align: middle; /* Alignement vertical avec le texte */
-    margin-right: 10px; /* Espacement entre le logo et le texte */
+    border-radius: 50%; /* Pour une photo ronde */
 }
 
 .tech-background {
     background-color: #e6f0ff; /* Couleur de fond */
     padding: 15px; /* Ajout de padding pour l'esthétique */
     border-radius: 10px; /*
-.company-logo {
-    width: 50px; /* Largeur du logo */
-    height: auto; /* Hauteur automatique pour maintenir les proportions */
-    vertical-align: middle; /* Alignement vertical avec le texte */
-    margin-right: 10px; /* Espacement entre le logo et le texte */
-}
