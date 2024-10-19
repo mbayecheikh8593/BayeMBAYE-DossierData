@@ -1,54 +1,156 @@
+/* Général */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-header {
-    background-color: #004d00; /* Couleur verte */
-    color: white;
+/* Section principale */
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px; /* Réduit de 20px à 15px */
+    margin-bottom: 22px; /* Réduit de 30px à 22px */
+    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1); /* Réduit la taille de l'ombre */
+    max-width: 800px; /* Réduit la largeur maximale */
+    margin: 30px auto; /* Réduit de 40px à 30px */
+}
+
+/* Titres principaux */
+h1, h2 {
+    color: #fff; /* Couleur du texte en blanc */
+    font-weight: bold;
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 15px; /* Réduit de 20px à 15px */
+    background-color: #004d40; /* Couleur de fond verte foncée */
+    padding: 10px; /* Ajout d'un peu de padding */
 }
 
-.tab {
-    overflow: hidden;
-    background-color: #005900; /* Couleur bleu-vert */
+/* Sous-titres */
+h3, h4 {
+    color: #fff; /* Couleur du texte en blanc */
+    font-weight: bold;
+    margin-bottom: 12px; /* Réduit de 15px à 12px */
+    background-color: #00695c; /* Couleur de fond verte moyenne */
+    padding: 8px; /* Ajout d'un peu de padding */
+}
+
+/* Logo centré */
+.logo {
+    width: 75px; /* Réduit de 100px à 75px */
+    height: auto;
+    display: block;
+    margin: 8px auto; /* Réduit de 10px à 8px */
+}
+
+/* Conteneur pour l'expérience professionnelle */
+.experience {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px; /* Réduit de 15px à 12px */
 }
 
-.tab button {
-    background-color: inherit;
-    border: none;
-    padding: 14px 16px;
-    cursor: pointer;
-    font-size: 17px;
-    color: white;
+/* Informations sur l'entreprise et la période */
+.company-info {
+    flex: 1;
 }
 
-.tab button:hover {
-    background-color: #007300; /* Couleur de survol */
+.date-range {
+    font-size: 12px; /* Réduit de 16px à 12px */
+    font-weight: bold;
+    color: #005b96;
+    text-align: right;
 }
 
-.tabcontent {
-    display: none;
-    padding: 20px;
+/* Style du contenu */
+p {
+    text-align: justify;
+    margin: 12px 0; /* Réduit de 15px à 12px */
 }
 
-.welcome-section {
+/* Listes de missions */
+ul {
+    list-style-type: square;
+    margin-left: 15px; /* Réduit de 20px à 15px */
+    padding-left: 10px; /* Réduit de 15px à 10px */
+}
+
+ul li {
+    margin-bottom: 8px; /* Réduit de 10px à 8px */
+    color: #333;
+}
+
+/* Titres de section */
+.section-title {
+    font-size: 24px; /* Réduit de 32px à 24px */
     text-align: center;
-    margin: 20px 0;
+    color: #fff; /* Couleur du texte en blanc */
+    margin-bottom: 22px; /* Réduit de 30px à 22px */
+    background-color: #004d40; /* Couleur de fond verte foncée */
+    padding: 10px; /* Ajout d'un peu de padding */
 }
 
+/* Sous-titres pour contexte et missions */
+.sub-section-title {
+    font-size: 16px; /* Réduit de 22px à 16px */
+    color: #fff; /* Couleur du texte en blanc */
+    margin-bottom: 8px; /* Réduit de 10px à 8px */
+    background-color: #00695c; /* Couleur de fond verte moyenne */
+    padding: 8px; /* Ajout d'un peu de padding */
+}
+
+/* Style pour les informations contextuelles */
+.context {
+    background-color: #f1f8e9;
+    border-left: 4px solid #388e3c;
+    padding: 12px; /* Réduit de 15px à 12px */
+    margin-bottom: 15px; /* Réduit de 20px à 15px */
+}
+
+/* Style des missions */
+.missions {
+    background-color: #e0f2f1;
+    border-left: 4px solid #004d40;
+    padding: 12px; /* Réduit de 15px à 12px */
+}
+
+/* Style des boutons (si nécessaire) */
+button {
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    padding: 8px 15px; /* Réduit de 10px à 8px et de 20px à 15px */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; /* Réduit de 16px à 12px */
+}
+
+button:hover {
+    background-color: #00332a;
+}
+
+/* Liens */
+a {
+    color: #005b96;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pour centrer des images (si vous en ajoutez) */
+img {
+    display: block;
+    margin: 20px auto; /* Réduit de 20px à 15px */
+    max-width: 100%;
+}
+/* Photo de profil */
 .profile-photo {
-    width: 250px; /* Taille de la photo */
-    height: 150px; /* Taille de la photo */
-    border-radius: 50%; /* Pour une photo ronde */
+    width: 95px; /* Ajustez cette valeur pour réduire la taille */
+    height: auto; /* Maintient les proportions de l'image */
 }
-
-.tech-background {
-    background-color: #e6f0ff; /* Couleur de fond */
-    padding: 15px; /* Ajout de padding pour l'esthétique */
-    border-radius: 10px; /*
