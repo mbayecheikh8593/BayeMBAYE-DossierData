@@ -310,9 +310,9 @@ img {
 
     .profile-photo {
         width: 90px;
-        float: right; /* Placer la photo à droite */
+        float:right ; /* Placer la photo à droite */
         margin-left: 10px; /* Ajouter un espacement entre la photo et le texte */
-        margin-bottom: 20px; /* Espacement en bas pour éviter les chevauchements */
+        margin-bottom: 10px; /* Espacement en bas pour éviter les chevauchements */
     }
 
     .acceuil {
