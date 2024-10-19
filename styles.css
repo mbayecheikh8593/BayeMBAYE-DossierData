@@ -1,132 +1,142 @@
 /* Général */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
-/* Section principale */
+/* Navigation et onglets */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #004d40;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Onglets */
+.tab {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab button:hover {
+    background-color: #00332a;
+}
+
+.tab button.active {
+    background-color: #00695c;
+}
+
+/* Sections */
 section {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 15px; /* Réduit de 20px à 15px */
-    margin-bottom: 22px; /* Réduit de 30px à 22px */
-    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1); /* Réduit la taille de l'ombre */
-    max-width: 800px; /* Réduit la largeur maximale */
-    margin: 30px auto; /* Réduit de 40px à 30px */
+    padding: 15px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
 }
 
-/* Titres principaux */
+/* Titres */
 h1, h2 {
-    color: #fff; /* Couleur du texte en blanc */
+    color: #fff;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 15px; /* Réduit de 20px à 15px */
-    background-color: #004d40; /* Couleur de fond verte foncée */
-    padding: 10px; /* Ajout d'un peu de padding */
+    margin: 25px 0;
+    background-color: #004d40;
+    padding: 10px;
+    font-size: 24px;
 }
 
-/* Sous-titres */
 h3, h4 {
-    color: #fff; /* Couleur du texte en blanc */
+    color: #fff;
     font-weight: bold;
-    margin-bottom: 12px; /* Réduit de 15px à 12px */
-    background-color: #00695c; /* Couleur de fond verte moyenne */
-    padding: 8px; /* Ajout d'un peu de padding */
+    margin: 20px 0;
+    background-color: #00695c;
+    padding: 8px;
+    font-size: 18px;
 }
 
-/* Logo centré */
-.logo {
-    width: 75px; /* Réduit de 100px à 75px */
-    height: auto;
-    display: block;
-    margin: 8px auto; /* Réduit de 10px à 8px */
+.section-title {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+    background-color: #004d40;
+    padding: 10px;
 }
 
-/* Conteneur pour l'expérience professionnelle */
-.experience {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px; /* Réduit de 15px à 12px */
+.sub-section-title {
+    font-size: 16px;
+    color: #fff;
+    margin: 15px 0;
+    background-color: #00695c;
+    padding: 8px;
 }
 
-/* Informations sur l'entreprise et la période */
-.company-info {
-    flex: 1;
-}
-
-.date-range {
-    font-size: 12px; /* Réduit de 16px à 12px */
-    font-weight: bold;
-    color: #005b96;
-    text-align: right;
-}
-
-/* Style du contenu */
+/* Texte */
 p {
     text-align: justify;
-    margin: 12px 0; /* Réduit de 15px à 12px */
+    margin: 20px 0;
+    line-height: 1.8;
 }
 
-/* Listes de missions */
+/* Listes */
 ul {
     list-style-type: square;
-    margin-left: 15px; /* Réduit de 20px à 15px */
-    padding-left: 10px; /* Réduit de 15px à 10px */
+    margin-left: 15px;
+    padding-left: 10px;
 }
 
 ul li {
-    margin-bottom: 8px; /* Réduit de 10px à 8px */
+    margin-bottom: 12px;
     color: #333;
 }
 
-/* Titres de section */
-.section-title {
-    font-size: 24px; /* Réduit de 32px à 24px */
-    text-align: center;
-    color: #fff; /* Couleur du texte en blanc */
-    margin-bottom: 22px; /* Réduit de 30px à 22px */
-    background-color: #004d40; /* Couleur de fond verte foncée */
-    padding: 10px; /* Ajout d'un peu de padding */
-}
-
-/* Sous-titres pour contexte et missions */
-.sub-section-title {
-    font-size: 16px; /* Réduit de 22px à 16px */
-    color: #fff; /* Couleur du texte en blanc */
-    margin-bottom: 8px; /* Réduit de 10px à 8px */
-    background-color: #00695c; /* Couleur de fond verte moyenne */
-    padding: 8px; /* Ajout d'un peu de padding */
-}
-
-/* Style pour les informations contextuelles */
-.context {
-    background-color: #f1f8e9;
-    border-left: 4px solid #388e3c;
-    padding: 12px; /* Réduit de 15px à 12px */
-    margin-bottom: 15px; /* Réduit de 20px à 15px */
-}
-
-/* Style des missions */
-.missions {
-    background-color: #e0f2f1;
-    border-left: 4px solid #004d40;
-    padding: 12px; /* Réduit de 15px à 12px */
-}
-
-/* Style des boutons (si nécessaire) */
+/* Boutons */
 button {
     background-color: #004d40;
     color: #fff;
     border: none;
-    padding: 8px 15px; /* Réduit de 10px à 8px et de 20px à 15px */
+    padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px; /* Réduit de 16px à 12px */
+    font-size: 12px;
 }
 
 button:hover {
@@ -143,14 +153,82 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Pour centrer des images (si vous en ajoutez) */
+/* Images */
 img {
     display: block;
-    margin: 20px auto; /* Réduit de 20px à 15px */
+    margin: 0px auto;
     max-width: 100%;
 }
-/* Photo de profil */
+
 .profile-photo {
-    width: 95px; /* Ajustez cette valeur pour réduire la taille */
-    height: auto; /* Maintient les proportions de l'image */
+    width: 350px;
+    height: auto;
+    border-radius: 90%;
+}
+
+.welcome-section {
+    position: relative;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+
+.profile-photo {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Section d'accueil */
+.acceuil {
+    width: 300px;
+    height: 300px;
+    background-color: #004d40;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.acceuil h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.acceuil p {
+    font-size: 16px;
+}
+
+/* Marges pour les sections spécifiques */
+.competences,
+.experiences,
+.formations,
+.profil-professionnel,
+.competences-techniques,
+.experiences-professionnelles,
+.formation,
+.competences-relationnelles {
+    margin: 30px 0;
+}
+
+/* Style contextuel */
+.context {
+    background-color: #f1f8e9;
+    border-left: 4px solid #388e3c;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.missions {
+    background-color: #e0f2f1;
+    border-left: 4px solid #004d40;
+    padding: 12px;
+    margin-bottom: 20px;
 }
