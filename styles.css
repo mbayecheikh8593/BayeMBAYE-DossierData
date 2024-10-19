@@ -156,20 +156,23 @@ a:hover {
 /* Images */
 img {
     display: block;
-    margin: 0px auto;
+    margin: 20px auto;
     max-width: 100%;
 }
 
 .profile-photo {
-    width: 150px;
+    width: 170px; /* Taille de la photo */
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%; /* Forme arrondie */
+    float: right; /* Placer la photo à droite */
+    margin-left: 10px; /* Ajouter un espacement entre la photo et le texte */
+    margin-bottom: 20px; /* Espacement en bas pour éviter les chevauchements */
 }
 
 /* Section d'accueil */
 .acceuil {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: #004d40;
     border-radius: 50%;
     display: flex;
@@ -234,7 +237,7 @@ img {
     }
 
     .profile-photo {
-        width: 100px; /* Ajuster la taille de la photo de profil sur mobile */
+        width: 80px; /* Ajuster la taille de la photo de profil sur mobile */
         margin: 10px auto; /* Centrer la photo de profil */
     }
 
@@ -244,7 +247,7 @@ img {
     }
 
     .acceuil h1 {
-        font-size: 20px; /* Réduire la taille de la police pour l'accueil */
+        font-size: 0px; /* Réduire la taille de la police pour l'accueil */
     }
 
     .acceuil p {
@@ -277,7 +280,7 @@ img {
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 10px;
     }
 
     nav ul li a {
@@ -303,7 +306,7 @@ img {
     }
 
     .profile-photo {
-        width: 70px;
+        width: 90px;
     }
 
     .acceuil {
