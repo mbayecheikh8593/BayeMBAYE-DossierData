@@ -161,21 +161,6 @@ img {
 }
 
 .profile-photo {
-    width: 350px;
-    height: auto;
-    border-radius: 90%;
-}
-
-.welcome-section {
-    position: relative;
-    margin-left: 80px;
-    margin-right: 70px;
-}
-
-.profile-photo {
-    position: absolute;
-    top: 40px;
-    right: 20px;
     width: 150px;
     height: auto;
     border-radius: 50%;
@@ -236,58 +221,52 @@ img {
 /* Adaptation pour les petits écrans (téléphones) */
 @media (max-width: 768px) {
     body {
-        margin: 10px;
+        margin: 10px; /* Réduire les marges pour les petits écrans */
         padding: 0;
     }
 
+    nav ul {
+        flex-direction: column; /* Mettre la navigation en colonne sur mobile */
+    }
+
     nav ul li {
-        margin: 0 8px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    .tab button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    section {
-        padding: 10px;
-        margin: 15px;
-    }
-
-    h1, h2 {
-        font-size: 20px;
-    }
-
-    h3, h4 {
-        font-size: 16px;
+        margin: 10px 0; /* Espacement vertical pour les éléments de navigation */
     }
 
     .profile-photo {
-        width: 100px;
-        top: 10px;
-        right: 10px;
+        width: 100px; /* Ajuster la taille de la photo de profil sur mobile */
+        margin: 10px auto; /* Centrer la photo de profil */
     }
 
     .acceuil {
-        width: 200px;
-        height: 200px;
+        width: 250px; /* Réduire la taille de la section d'accueil */
+        height: 250px;
     }
 
     .acceuil h1 {
-        font-size: 20px;
+        font-size: 20px; /* Réduire la taille de la police pour l'accueil */
     }
 
     .acceuil p {
         font-size: 14px;
     }
 
-    button {
-        font-size: 10px;
-        padding: 6px 10px;
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    h3, h4 {
+        font-size: 16px;
+    }
+
+    .tab button {
+        font-size: 14px;
+        padding: 8px;
     }
 }
 
@@ -324,7 +303,7 @@ img {
     }
 
     .profile-photo {
-        width: 90px;
+        width: 70px;
     }
 
     .acceuil {
@@ -338,10 +317,5 @@ img {
 
     .acceuil p {
         font-size: 15px;
-    }
-
-    button {
-        font-size: 11px;
-        padding: 7px 12px;
     }
 }
